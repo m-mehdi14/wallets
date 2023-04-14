@@ -23,7 +23,7 @@ function RpcProviderExample() {
   const createWallet = async () => {
     setLoading(true)
     const signer = await getZeroDevSigner({
-      projectId: "<project id>",
+      projectId: "5c5ce7cb-9231-4ffc-9792-a58f27f43c13",
       owner: await getSocialWalletOwner("5c5ce7cb-9231-4ffc-9792-a58f27f43c13", socialWallet)
     })
     setAddress(await signer.getAddress())
@@ -45,7 +45,7 @@ function RpcProviderExample() {
         </div>
       }
       <div>
-        {!connected && <button className='  flex flex-col items-center border-1 bg-blue-400 border-blue-300 px-3 py-2 rounded-xl mt-7' onClick={createWallet} disabled={loading}>{ loading ? 'loading...' : 'Create Wallet'}</button>}
+        {!connected && <button className='  flex flex-col items-center border-1 bg-cyan-600 border-blue-300 hover:scale-105 px-3 py-2 rounded-xl font-medium text-white' onClick={createWallet} disabled={loading}>{ loading ? 'loading...' : 'Create Social'}</button>}
         {connected && 
           <button onClick={disconnect} disabled={loading}>Disconnect</button>
         }

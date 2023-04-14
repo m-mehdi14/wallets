@@ -9,13 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@rainbow-me/rainbowkit": "^0.12.8",
     "@types/node": "18.15.11",
     "@types/react": "18.0.35",
     "@types/react-dom": "18.0.11",
     "@types/web3": "^1.2.2",
+    "@web3modal/ethereum": "^2.3.0",
+    "@web3modal/react": "^2.3.0",
     "@zerodevapp/sdk": "^2.2.14",
     "@zerodevapp/social-wallet": "^1.0.1",
+    "@zerodevapp/wagmi": "^1.0.19",
     "autoprefixer": "10.4.14",
+    "connectkit": "^1.2.2",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
     "magic-sdk": "^16.2.0",
